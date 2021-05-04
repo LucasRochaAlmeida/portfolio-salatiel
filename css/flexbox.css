@@ -1,0 +1,98 @@
+.cabecalhoPrincipal .container{
+    display: flex; /* elemento pai como flex para deixar os elementos filhos distribuidos em linha */
+    align-items: center;
+    justify-content: space-between; /* espaço que sobra, coloca entre os elementos */
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+}
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    /* Dessa forma todos os elementos filhos ficam um do lado do outro 
+    e quando chegassem ao limite da página quebrariam para a linha de baixo, 
+    formando assim o grid. */
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column; /* direção do flex (row é o padrão)*/
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 100%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* parte mobile */
+@media(max-width: 768px){
+        
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos{
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        margin: 0;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+}
