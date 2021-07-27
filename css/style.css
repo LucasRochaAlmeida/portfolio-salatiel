@@ -66,6 +66,10 @@ body {
 	height: inherit;
 }
 
+#imgTotem{
+	width: -webkit-fill-available;
+}
+
 .conteudoPrincipal-cursos-link a {
 	text-decoration: none;
 	color: #000;
