@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column; /* direção do flex (row é o padrão)*/
     flex-wrap: wrap;
-    height: 250px;
+    height: 275px;
 }
 
 .rodapePrincipal-patrocinadores .container{
